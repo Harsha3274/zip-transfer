@@ -8,7 +8,7 @@ pipeline {
 
               script {
 
-                  bat 'scp -i "C:/Users/ASUS/.ssh/id_rsa" "C:/Users/ASUS/Downloads/mysql-connector-java-8.0.17.rar" ubuntu@13.201.64.199:/home/ubuntu/'
+                  bat 'scp "C:/Users/ASUS/Downloads/mysql-connector-java-8.0.17.rar" ubuntu@13.201.64.199:/home/ubuntu/'
 
 }
 }
