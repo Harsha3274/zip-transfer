@@ -19,6 +19,7 @@ post {
 success {
 
 echo 'file copy successfull'
+}
 
 failure {
 
