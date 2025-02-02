@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+
+    stages {
+        stage('transfer ZIP from local to remote server') {
+
+            steps {
+
+              script {
+
+                  sh 'scp "C:/Users/ASUS/Downloads/flutter_windows_3.27.1-stable.zip" ubuntu@13.201.64.199:/home/ubuntu/'
+}
+}
+}
+}
+
+post {
+
+success {
+
+echo 'file copy successfull'
+
+failure {
+
+echo 'file copy failed'
+}
+}
+}
